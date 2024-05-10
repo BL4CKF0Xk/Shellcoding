@@ -19,3 +19,5 @@ for i in `objdump -d BINARY | tr '\t' ' ' | tr ' ' '\n' | egrep '^[0-9a-f]{2}$' 
 ```bash
 gcc -fno-stack-protector -z execstack shellcode.c
 ```
+
+You can get the shellcode from nasm file and after that enter that shellcode to the SHELLCODE posisiton at shellcode.c. Then you can compile the c file and test the shellcode
